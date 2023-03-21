@@ -11,6 +11,12 @@
 		84F9A6B029CA092700D1FE71 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F9A6AF29CA092700D1FE71 /* ContentView.swift */; };
 		84F9A6B229CA092800D1FE71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84F9A6B129CA092800D1FE71 /* Assets.xcassets */; };
 		84F9A6B529CA092800D1FE71 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84F9A6B429CA092800D1FE71 /* Preview Assets.xcassets */; };
+		84F9A6BD29CA094C00D1FE71 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 84F9A6BC29CA094C00D1FE71 /* Alamofire */; };
+		84F9A6C029CA095F00D1FE71 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 84F9A6BF29CA095F00D1FE71 /* SDWebImageSwiftUI */; };
+		84F9A6C229CA097A00D1FE71 /* NewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F9A6C129CA097A00D1FE71 /* NewModel.swift */; };
+		84F9A6C429CA099E00D1FE71 /* CatalogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F9A6C329CA099E00D1FE71 /* CatalogViewModel.swift */; };
+		84F9A6C629CA09CC00D1FE71 /* CatalogModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F9A6C529CA09CC00D1FE71 /* CatalogModel.swift */; };
+		84F9A6C829CA09F300D1FE71 /* NewsViwModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F9A6C729CA09F300D1FE71 /* NewsViwModelView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,10 @@
 		84F9A6AF29CA092700D1FE71 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		84F9A6B129CA092800D1FE71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84F9A6B429CA092800D1FE71 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		84F9A6C129CA097A00D1FE71 /* NewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewModel.swift; sourceTree = "<group>"; };
+		84F9A6C329CA099E00D1FE71 /* CatalogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogViewModel.swift; sourceTree = "<group>"; };
+		84F9A6C529CA09CC00D1FE71 /* CatalogModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogModel.swift; sourceTree = "<group>"; };
+		84F9A6C729CA09F300D1FE71 /* NewsViwModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViwModelView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +36,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84F9A6C029CA095F00D1FE71 /* SDWebImageSwiftUI in Frameworks */,
+				84F9A6BD29CA094C00D1FE71 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +65,10 @@
 			children = (
 				84F9A6AD29CA092700D1FE71 /* session3App.swift */,
 				84F9A6AF29CA092700D1FE71 /* ContentView.swift */,
+				84F9A6C329CA099E00D1FE71 /* CatalogViewModel.swift */,
+				84F9A6C729CA09F300D1FE71 /* NewsViwModelView.swift */,
+				84F9A6C129CA097A00D1FE71 /* NewModel.swift */,
+				84F9A6C529CA09CC00D1FE71 /* CatalogModel.swift */,
 				84F9A6B129CA092800D1FE71 /* Assets.xcassets */,
 				84F9A6B329CA092800D1FE71 /* Preview Content */,
 			);
@@ -83,6 +99,10 @@
 			dependencies = (
 			);
 			name = session3;
+			packageProductDependencies = (
+				84F9A6BC29CA094C00D1FE71 /* Alamofire */,
+				84F9A6BF29CA095F00D1FE71 /* SDWebImageSwiftUI */,
+			);
 			productName = session3;
 			productReference = 84F9A6AA29CA092700D1FE71 /* session3.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +131,10 @@
 				Base,
 			);
 			mainGroup = 84F9A6A129CA092700D1FE71;
+			packageReferences = (
+				84F9A6BB29CA094C00D1FE71 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				84F9A6BE29CA095F00D1FE71 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = 84F9A6AB29CA092700D1FE71 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +161,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84F9A6C829CA09F300D1FE71 /* NewsViwModelView.swift in Sources */,
+				84F9A6C429CA099E00D1FE71 /* CatalogViewModel.swift in Sources */,
 				84F9A6B029CA092700D1FE71 /* ContentView.swift in Sources */,
+				84F9A6C229CA097A00D1FE71 /* NewModel.swift in Sources */,
 				84F9A6AE29CA092700D1FE71 /* session3App.swift in Sources */,
+				84F9A6C629CA09CC00D1FE71 /* CatalogModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +367,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		84F9A6BB29CA094C00D1FE71 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		84F9A6BE29CA095F00D1FE71 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		84F9A6BC29CA094C00D1FE71 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 84F9A6BB29CA094C00D1FE71 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		84F9A6BF29CA095F00D1FE71 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 84F9A6BE29CA095F00D1FE71 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 84F9A6A229CA092700D1FE71 /* Project object */;
 }
