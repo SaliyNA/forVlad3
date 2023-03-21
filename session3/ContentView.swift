@@ -34,10 +34,18 @@ struct CatalogView: View {
                         ZStack{
                             HStack{
                                 Spacer()
-                                WebImage(url: URL(string:item2.image.replacingOccurrences(of: " ", with: "%20")))
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fit)
-                                    .frame(height: 152)
+//                                    для картинки по URL и кэщирования
+                                AsyncImage(url: URL(string:item2.image.replacingOccurrences(of: " ", with: "%20"))){ image in
+                                    image.resizable()
+                                        .aspectRatio(contentMode: .fit)
+                                        .frame(height: 152)
+                                } placeholder: {
+                                 //   Image(systemName: "globe")
+                                }
+//                             //   WebImage(url: URL(string:item2.image.replacingOccurrences(of: " ", with: "%20")))
+//                                    .resizable()
+//                                    .aspectRatio(contentMode: .fit)
+//                                    .frame(height: 152)
                             }
                             
                             VStack(alignment: .leading){
@@ -75,6 +83,9 @@ struct CatalogView: View {
         }.onAppear{
             viewModel.catalogRequest()
             viewModel2.newsRequest()
+            //для кэширования
+            URLCache.shared.memoryCapacity = 1_000_000
+            URLCache.shared.diskCapacity = 1_000_000_000
         }
     }
 }
